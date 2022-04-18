@@ -16,6 +16,7 @@
   
 }
 
+
 body{
 overflow: hidden;
 height: 100%;
@@ -28,8 +29,8 @@ background-color: #F9F9F9;
 
 .navbar{
   display: flex;
-  z-index: 100000;
-  position: fixed;
+  z-index: 1000;
+  position:fixed;
   top: 0;
   left: 0;
   height: 70px;
@@ -145,11 +146,11 @@ color: #ffffff;
 
 .text .download{
   padding-right: 15px;
- width: 135px;
+ /* width: 135px; */
   color:#009456;
   font-family: 
   Spartan;
-  font-size: 14px;
+  font-size: 12px;
   height: 27px;
   font-weight: bold;
   /* background-color: #009456; */
@@ -352,7 +353,7 @@ footer {
 #bottom-nav{
   display: flex;
 
-  margin-left: 222px;
+  margin-left: 300px;
   padding-top: 20px;
   /* justify-content: center; */
 }
@@ -400,17 +401,6 @@ position: absolute;
  
 
 
-.fixed-top .navbar-collapse {
-  max-height: calc(100vh - 4.5em);
-  overflow-y: auto;
-}
-
-#subscription .btn-1{
-cursor: pointer;
-}
-#subscription .field{
-display: none;
-}
 
 
 /* body::-webkit-scrollbar {
