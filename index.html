@@ -9,201 +9,76 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
+      <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+
+
+<!-- Custom styles for this template -->
+
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- <link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'> -->
 </head>
 <body style="background-image: url(images/Vector6.png);">
-    <!--top nav start-->
 
-    <section id="header">
-        <div class="container-fluid" >
-            <div class="topNav">
-                <a href=""><img src="images/Frame.png" class="logo" alt=""></a>
-                <div>
-                    <ul id="navbar">
-                        <li><a class="active" href="index.html"><img src="images/home.svg" alt=""> Home</a></li>
-                        <li><a href="offers.html"> <img src="images/gift 1.svg" alt=""> Offers</a></li>
-                        <li><a href="offers.html"><img src="images/User.svg" alt="" style="padding-right:2px;">Service</a></li>
-                        <li><a href="blog.html"><img src="images/blog.svg" alt=""style="padding-right:2px;">Blog</a></li>
-                        
-                        <li><a href="faq.html"><img src="images/faq.svg" alt=""style="padding-right:2px;">FAQ</a></li>
-                        <li><a href="about.html"><img src="images/aboutus.svg" alt=""style="padding-right:2px;">About Us</a></li>
-                        <li><a href="contact.html"><img src="images/contactUs.svg" alt=""style="padding-right:2px;">Contact Us</a></li>
-                        
-                    </ul>
-                    
-                </div>
-                <!-- <div class=" searchBox">
-                    <input type="search" class="searchText" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                    <span class="" id="search-addon">
-                        <a href="" target="blank" class="search"> <i class="fa fa-search" id="search1"></i> </a> 
-                    </span>
-                  </div> -->
-                <div class=" d-flex navbar-text">
-                 
-                        <!-- <input type="text"  target="blank" class="searchText" placeholder="Search here"style="height: ; width: ;">
-                        <span class="input-group-text border-0" id="search-addon"><i class="fa fa-search" id=""></i>  
-                        </span>
-                        </div> -->
-                        <a href="" target="blank" class="search"> <i class="fa fa-search" id="search1"></i> </a> 
-                   <a href="" target="blank" class="download">Download App</a> 
-                 
-                  
-                      <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-                    <a href="" class=" btn btn-sm btn-danger" >English</a>
-                    
-               
-
-            </div>
+   
+  <nav class="navbar navbar-expand-md  fixed-top " style="background-color: #FFFFFF;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="logo" src="images/Frame.png" alt="" height="30px" width="80px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          
+          <li class="nav-item"><a class="nav-link active" href="index.html"><img src="images/home.svg" alt=""> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="offers.html"> <img src="images/gift 1.svg" alt=""> Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="offers.html"><img src="images/header/User.svg" alt="" style="padding-right:2px;">Service</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html"><img src="images/header/blog.svg" alt=""style="padding-right:2px;">Blog</a></li>
             
-        </div>
-    </section>
-
-    
-    <!--top nav end-->
-     <!--left-side Social media start-->
-     <section id="social" style="margin-top:5%">
-    
-        <nav >  
-            <ul>
-
-
-
-
-                <li> <a href=""> <i class="rotate-image fab fa-youtube "></i></a> </li>
-                <li>  <a href=""><i class="rotate-image fab fa-twitter "></i></a></li>
-                     
-                <li>  <a href=""> <i class="rotate-image fab fa-linkedin-in "></i></a></li>
-                <li>  <a href=""><i class="rotate-image fab fa-facebook-f "></i></a></li>
-           
-                
-            </ul>
-        </nav>
+          <li class="nav-item"><a class="nav-link" href="faq.html"><img src="images/header/faq.svg" alt=""style="padding-right:2px;">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><img src="images/header/aboutus.svg" alt=""style="padding-right:2px;">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><img src="images/header/contactUs.svg" alt=""style="padding-right:2px;">Contact Us</a></li>
+            
+        </ul>
        
-    
-    </section>
-
-    <!--left-side Social media end-->
-
-    <style>
-        #social{
-    position: fixed;
-    padding-left: 9px;
+      </div>
+       <form class="navbar-text d-flex">
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width:30px;"> -->
+          <button class="btn btn-sm  search" type="submit"><i class="fa fa-search"></i> </button>
+          <a href="" class="download">Download now</a>
+          <button class="btn-1 btn-sm btn-danger" type="submit"> English</button>
+          
+      </form>
+    </div>
+  </nav>
   
-  position: fixed;
-  /* z-index: 6; */
-  height: 100%;
-   
-  }
-  
-        #social li {
-   
-   padding-top: 12px;
-   position: relative;
-   }
-        .rotate-image :hover {
-              -webkit-transform: rotate(270deg);
-              -moz-transform: rotate(270deg);
-              -ms-transform: rotate(270deg);
-              -o-transform: rotate(270deg);
-              transform: rotate(270deg);
-              fill: #009456;
-             padding-top: 12px;
-             /* transition: all 0.1s; */
-          }
-   
-        .rotate-image span:hover {
-              -webkit-transform: rotate(270deg);
-              -moz-transform: rotate(270deg);
-              -ms-transform: rotate(270deg);
-              -o-transform: rotate(270deg);
-              transform: rotate(270deg);
-          }
-  
-  #social-icon {
-   /* border:3px solid #CCC;
-   -webkit-box-shadow: -3px 6px 13px 3px rgba(201,201,201,1);
-   -moz-box-shadow: -3px 6px 13px 3px rgba(201,201,201,1);
-   box-shadow: -3px 6px 13px 3px rgba(201,201,201,1); */
-  }
-  span {
-   color:black;
-  }
-   
-    </style>
-
-
-    <!--main content start-->
-  
-    <section id="subscription">
-
-      <i class="arrow left"></i>
-        <label for="click" class="btn-1 btn-success">Subscription</label>
-        <div class="field">
-            <input type="text" placeholder="email address">
-            <button class="btn-2 btn-success">></button>
-        </div>
-    </section>
-     
- <!--Bank service slider-->  
-    <section id="bankSlider">
-        <div class="containar-fluid">
-            <div class="col-xl-2">
-                
-            </div>
-        <div class="col-xl-10">
-            
-            <div class="" id="bank" style="">
-                <a href="brack.com"><img src="images/Brac_Bank.png" alt="" class="brack"></a>
-                <img src="images/City_Bank 1.png" alt="" class="city">
-                <img src="images/eximbank.png" alt="" class="exim">
-                <img src="images/easternbank.png" alt="" class="easternbank">
-                <img src="images/dachbank.png" alt="" class="dachbank">
-                
-            </div>
-        </div>   
-        <div class="col-xl-2">
-                
-        </div>
-        </div>
-    </section>     
-  <!--Bank service slider end-->  
-
-
-    
-  <!--Footer sections-->
- 
-    <footer class="footer navbar-fixed-bottom">
-        
-        <div class="container-fluid" >
-           
-            
-                <div class="footerNav">
-               
-                <div class="footer-content">
-                <img src="images/footerimg.svg" alt="" class="footer-content" style="">
-                </div>
-                <div >   
-                    <ul id="bottom-nav">
-                        <li><a class="active" href="index.html">Event</a></li>
-                        <li><a href="blog.html">Career</a></li>
-                        <li><a href="offers.html">Support</a></li>
-                        <li><a href="faq.html">Terms & Conditions</a></li>
-                        <li><a href="about.html">Privacy Policy</a></li>
-                        <li><a href="contact.html">Cookie Policy</a></li>
-                        <li><a href="contact.html">Site Map</a></li>
-                        
-                    </ul>
-                </div>
-                    
-            </div> 
-        </div>
- 
-       
-    </footer>
- 
-  <!--Footer sections end-->
+  <main class="container-fluid mt-5">
+    <div class=" ">
+      <h1>Navbar example</h1>
+      <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
+      <a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs &raquo;</a>
+    </div>
+    <h1 class="outlined">Properly outlined!</h1>
+  </main>
+</script>
     <script src="js/script.js"></script>
     <script src="bootstrap.bundle.js"></script>
 <script src="bootstrap.min.js"></script>
