@@ -3,39 +3,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',serif;
+    font-family:'Poppins', 	Sans Serif;
 }
- @import url('https://fonts.googleapis.com/css?family=Spartan'); 
- /* latin-ext */
+ /* @import url('https://fonts.googleapis.com/css?family=Spartan'); 
+
 @font-face {
   font-family: 'Spartan';
   font-style: normal;
   font-weight: 400;
   src: url('https://fonts.gstatic.com/s/spartan/v12/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrGFuV6HABTdfw.woff2') format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Spartan;
-  
-}
+} */
 
 
 body{
-/* overflow: hidden;
-height: 100%;
-width: 100%; */
-font-family: 'Spartan';
+  font-family:'Poppins', 	Sans Serif;
 background-image: url("images/Vector6.png");
 background-color: #F9F9F9;
+min-height: 75rem;
+padding-top: 4.5rem;
+}
 
-}
-body {
-  min-height: 75rem;
-  padding-top: 4.5rem;
-}
 a{
   text-decoration: none;
 
@@ -43,21 +31,7 @@ a{
 li{
   list-style: none;
 }
-#header{
-  display: flex;
-  align-items: center;
 
-  background-color: #F9F9F9;
-  border-bottom: 2px solid #009456;
-  box-shadow: 0 5px 15px rgba(0, 0,0, 0.05);
-  z-index: 100000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 86px;
- 
- }
  .navbar{
   border-bottom: 2px solid #009456;
  }
@@ -68,7 +42,7 @@ li{
    transition: 0.5s ease;
    /* margin-top: 20px; */
    margin-left: 39px;
-   margin-right: 50px;
+   margin-right: 65px;
   
  
 
@@ -127,7 +101,7 @@ li{
     height: 27px;
     border-radius: 4px;
     text-align: center;
-    font-family:  poppins;
+    font-family: 'Poppins';
     font-size: 12px;
         padding-right: 19px;
 background-color: #EE2D43;
@@ -149,17 +123,58 @@ color: #ffffff;
   } 
 
   /*header end*/
-  .outlined {
-    font-family: Poppins;
-    color: white;
- font-size: 6em;
-    text-shadow:
-      -1px -1px 0 red,
-       0   -1px 0 red,
-       1px -1px 0 red,
-       1px  0   0 red,
-       1px  1px 0 red,
-       0    1px 0 red,
-      -1px  1px 0 red,
-      -1px  0   0 ;
+
+
+  /*********************Home Easy Payment System Part start****************/
+ main .outlined{
+   /* background-color: red; */
+    padding-left: 220px;
+    padding-right:  30px;
   }
+ main .btn-1{
+    width: 429px;
+    height:52px;
+    background-color: #009456;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    }
+
+    main .easy{
+      font-family:'Poppins', 	Sans Serif;
+      font-size: 80px;
+      color: white;
+      text-transform: uppercase;
+    padding-top: 20px;
+    /* line-height: 1rem; */
+      text-shadow:
+        -2px -2px 0 #EE2D43,
+         0   -2px 0 #EE2D43,
+         2px -2px 0 #EE2D43,
+         2px  0   0 #EE2D43,
+         2px  2px 0 #EE2D43,
+         0    2px 0 #EE2D43,
+        -2px  2px 0 #EE2D43,
+        -2px  0   0 #EE2D43;
+    }
+  main .payment{
+   /* margin-bottom: 10px; */
+      text-transform: uppercase;
+      color: white;
+      font-size: 80px;
+      font-family:'Poppins', 	Sans Serif;
+      /* line-height: 1rem; */
+      /* font-family:'Poppins', Courier, monospace; */
+      text-shadow:
+        -1px -1px 0 #009456,
+         0   -1px 0 #009456,
+         1px -1px 0 #009456,
+         1px  0   0 #009456,
+         1px  1px 0 #009456,
+         0    1px 0 #009456,
+        -1px  1px 0 #009456,
+        -1px  0   0 #009456;
+    }
+  
+  /*********************Home Easy Payment System Part end****************/
