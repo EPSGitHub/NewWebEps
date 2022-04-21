@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/poppins-v19-latin-regular.eot'); 
+  src: local(''),
+       url('fonts/poppins-v19-latin-regular.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/poppins-v19-latin-regular.woff2') format('woff2'), 
+       url('fonts/poppins-v19-latin-regular.woff') format('woff'), 
+       url('fonts/poppins-v19-latin-regular.ttf') format('truetype'),
+       url('fonts/poppins-v19-latin-regular.svg#Poppins') format('svg'); 
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Poppins', 	Sans Serif;
+    /* font-family:'Poppins', 	Sans Serif; */
 }
- /* @import url('https://fonts.googleapis.com/css?family=Spartan'); 
-
-@font-face {
-  font-family: 'Spartan';
-  font-style: normal;
-  font-weight: 400;
-  src: url('https://fonts.gstatic.com/s/spartan/v12/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrGFuV6HABTdfw.woff2') format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-} */
 
 
 body{
-  font-family:'Poppins', 	Sans Serif;
-background-image: url("images/Vector6.png");
+
 background-color: #F9F9F9;
 min-height: 75rem;
 padding-top: 4.5rem;
@@ -40,8 +43,7 @@ li{
 
    display: block;
    transition: 0.5s ease;
-   /* margin-top: 20px; */
-   margin-left: 39px;
+
    margin-right: 65px;
   
  
@@ -92,8 +94,8 @@ li{
 }
 .navbar-text{
  
-
-    padding-right: 50px;
+/* 
+    padding-right: 50px; */
     /* margin-top: 18px; */
   }
   .navbar-text .btn-1{
@@ -121,60 +123,102 @@ color: #ffffff;
     padding-right: 12px;
     color:#666666;
   } 
+/*header end*************************************/
 
-  /*header end*/
-
-
-  /*********************Home Easy Payment System Part start****************/
- main .outlined{
-   /* background-color: red; */
-    padding-left: 220px;
+/*********************Home Easy Payment System Part start****************/
+ main .main-content{
+   
+    padding-left: 180px;
     padding-right:  30px;
   }
  main .btn-1{
-    width: 429px;
-    height:52px;
+   
     background-color: #009456;
     color: #FFFFFF;
-    margin-bottom: 20px;
+  
     border-radius: 4px;
     font-family: 'Poppins';
+    font-size: 0.8em;
     }
 
     main .easy{
-      font-family:'Poppins', 	Sans Serif;
-      font-size: 80px;
-      color: white;
+     
+      font-size:4rem;
       text-transform: uppercase;
     padding-top: 20px;
-    /* line-height: 1rem; */
-      text-shadow:
-        -2px -2px 0 #EE2D43,
-         0   -2px 0 #EE2D43,
-         2px -2px 0 #EE2D43,
-         2px  0   0 #EE2D43,
-         2px  2px 0 #EE2D43,
-         0    2px 0 #EE2D43,
-        -2px  2px 0 #EE2D43,
-        -2px  0   0 #EE2D43;
+    color: #FFFFFF;
+    font-weight:900;
+ 
+    -webkit-text-stroke: 1.5px #EE2D43;
+  
+
     }
   main .payment{
-   /* margin-bottom: 10px; */
-      text-transform: uppercase;
-      color: white;
-      font-size: 80px;
-      font-family:'Poppins', 	Sans Serif;
-      /* line-height: 1rem; */
-      /* font-family:'Poppins', Courier, monospace; */
-      text-shadow:
-        -1px -1px 0 #009456,
-         0   -1px 0 #009456,
-         1px -1px 0 #009456,
-         1px  0   0 #009456,
-         1px  1px 0 #009456,
-         0    1px 0 #009456,
-        -1px  1px 0 #009456,
-        -1px  0   0 #009456;
-    }
   
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-size:4rem;
+      -webkit-text-stroke: 1.5px #009456;
+      font-weight: 900;
+  
+    }
+  main .system{
+  
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-size:4rem;
+      -webkit-text-stroke: 1.5px #009456;
+      font-weight: 900;
+      margin-bottom: 10px;
+  
+    }
+main p{
+  font-family: 'Poppins';
+  font-size: 12px;
+  line-height: 25px;
+  width: 450px;
+
+  color: #666666;
+}
+main .service{
+ 
+}    
+.service .btn{
+  font-family: 'Poppins';
+  font-size: 0.5rem;
+  color: #666666;
+  width:100px;
+  height:30px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin-right: 12px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+ padding-top:8px ;
+ font-weight: 500;
+  }
+  .service .btn.active{
+  
+    background-color: #009456;
+    color: #FFFFFF;
+    
+    }  
+main #slider{
+  
+   
+}
+main #slider-images{
+  border:6px solid #3F3D56;
+  border-radius: 24px;
+  width:163px;
+}
+main #slider-images img{
+  position: relative; 
+  height: 315px;
+  border-radius: 24px;
+    width:150px;
+ 
+ }
+ .image-container{
+ position: relative;
+ }   
   /*********************Home Easy Payment System Part end****************/
