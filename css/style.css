@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
@@ -183,7 +183,7 @@ main p{
 main .service{
  
 }    
-.service .btn{
+.slides .btn{
   font-family: 'Poppins';
   font-size: 0.5rem;
   color: #666666;
@@ -191,34 +191,172 @@ main .service{
   height:30px;
   background-color: #FFFFFF;
   border-radius: 8px;
-  margin-right: 12px;
+  
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
  padding-top:8px ;
  font-weight: 500;
   }
-  .service .btn.active{
+ .slides .btn.active{
   
-    background-color: #009456;
+    /* background-color: #009456; */
     color: #FFFFFF;
     
-    }  
-main #slider{
-  
-   
+ }  
+/* main .slider{
+
 }
-main #slider-images{
+
+main .slider {
+ 
+  overflow: hidden;
   border:6px solid #3F3D56;
   border-radius: 24px;
   width:163px;
+  margin: 0;
+  left: 0;
 }
-main #slider-images img{
+.slides{
+  display: flex;
+}
+.slide{
+  transition: 2s;
+}
+.slides .btn{ 
+  display: flex;
+}
+.slide img{
+
   position: relative; 
   height: 315px;
   border-radius: 24px;
     width:150px;
- 
+    margin: 0;
+    left: 0;
  }
- .image-container{
- position: relative;
- }   
+.navigation-manual{
+
+}
+.manual-btn{
+  border: 2px solid red;
+} */
+
+.slider{
+  overflow: hidden;
+  border:6px solid #3F3D56;
+  border-radius: 24px;
+  width:170px;
+ margin-left:20px;
+  /* margin: 0;
+  m: 0; */
+ 
+}
+
+.slides{
+  width: 650%;
+  /* height: 500px; */
+  display: flex;
+  padding-right:30px ;
+
+}
+
+.slides input{
+  display: none;
+  /* margin-left: 12px; */
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  height: 315px;
+  width:150px;
+  border-radius: 24px;
+ 
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+
+  display: flex;
+  /* justify-content: center; */
+}
+
+.manual-btn{
+  /* border: 2px solid #40D3DC; */
+  /* padding: 5px; */
+ 
+  cursor: pointer;
+  transition: 2s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 12px;
+}
+
+.manual-btn.active,
+.manual-btn:hover{
+  background-color: #009456;
+  color: #FFFFFF;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: none;
+  width: 800px;
+  /* justify-content: center; */
+  /* margin-top: 460px;
+  */
+ 
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: red;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: red;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: red;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: red;
+}
+      
   /*********************Home Easy Payment System Part end****************/
